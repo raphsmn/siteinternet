@@ -1,0 +1,182 @@
+@font-face {
+  font-family: "Roadam";
+  src: url("fonts/Roadam.otf");
+}
+
+body {
+  font-family: "Rethink Sans", sans-serif;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+  color: #fff;
+  transition: background-color 0.5s ease;
+}
+
+.header-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.header-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1a1a1a;
+  z-index: -1;
+}
+
+.logo {
+  font-family: "Roadam", sans-serif;
+  font-size: 2em;
+  color: #fff;
+  padding: 20px 15px;
+}
+
+header {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.5s ease;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #0cc789;
+}
+
+.section.background-image {
+  background-image: url("/Users/raphaelsamson/Downloads/rendu site internet//image/laylowscreen.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 171px 80px;
+}
+
+.hero h1 {
+  font-size: 6em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 2em;
+  font-style: italic;
+  margin-bottom: 100px;
+}
+
+footer {
+  background-color: #111;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+#biographie {
+  padding: 79px 80px;
+}
+
+#biographie p {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+}
+
+#albums {
+  padding: 50px 80px;
+}
+
+.music-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.song {
+  text-align: center;
+  flex: 0 0 48%;
+  margin-bottom: 20px;
+}
+
+.song img {
+  width: 67%;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+#contact {
+  padding: 308px 30px;
+  text-align: center;
+  background-image: url("https://classemediaslyceemontaigneparis06home.files.wordpress.com/2020/02/laylow-phone.jpg?w=683");
+  background-size: countain;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+#contact a {
+  background-color: #000;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.scroll-button {
+  position: fixed;
+  top: 50%;
+  font-size: 34px;
+  color: #fff;
+  background-color: #0000007f;
+  border-radius: 10%;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.scroll-button.prev {
+  left: 10px;
+  transform: scaleX(-1);
+}
+
+.scroll-button.next {
+  right: 10px;
+}
+
+.scroll-button a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    padding: 1px;
+  }
+
+  .logo {
+    font-size: 1.2em;
+  }
+  .hero {
+    font-size: 0.7em;
+  }
+}
